@@ -22,7 +22,7 @@ ScrollTrigger.refresh();
 
 const videoconAnimation = () => {
     var videocon = document.querySelector('#video-container')
-var playbtn = document.querySelector('#play')
+    var playbtn = document.querySelector('#play')
 
 videocon.addEventListener('mouseenter', () => {
     gsap.to(playbtn, {
@@ -38,10 +38,14 @@ videocon.addEventListener('mouseleave', () => {
     });
 });
 
-videocon.addEventListener('mousemove', (dets) => {
+videocon.addEventListener('mousemove', (event) => {
+    var rect = videocon.getBoundingClientRect();
+    var mouseX = event.clientX - rect.left;
+    var mouseY = event.clientY - rect.top;
+
     gsap.to(playbtn, {
-        left: dets.x-50,
-        top: dets.y-80,
+        left: mouseX - playbtn.offsetWidth / 2,
+        top: mouseY - playbtn.offsetHeight / 2,
     });
 });
 }
