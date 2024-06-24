@@ -5,3 +5,7 @@
 # 2. Two Good Co
   In minor2 try to replicate two good co website. <br>
   here is link to visit it ->  https://6676ef8e235f9bb139a5c244--reliable-cobbler-d82eed.netlify.app/
+
+# 3. Animation Site
+  In minor3 use sheryJS library for animations. <br>
+  here is link to visit it ->  https://6678dddba47af81865d36b53--clever-tiramisu-bf264c.netlify.app/
